@@ -25,7 +25,8 @@ $(call inherit-product, $(CUSTOM_PATH)/config/audio.mk)
 PRODUCT_PACKAGES += \
 	AndroidDataBackup \
 	CameraGo_SHAMIM \
-	GeometricWeather
+	GeometricWeather \
+	RemovePackages
 
 ifneq ($(WITH_GAPPS), true)
 ifneq ($(WITH_GMS), true)
