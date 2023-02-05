@@ -20,4 +20,16 @@ PRODUCT_SOONG_NAMESPACES += $(CUSTOM_PATH)
 
 # Custom Apps
 PRODUCT_PACKAGES += \
-	CameraGo_SHAMIM
+	AndroidDataBackup \
+	CameraGo_SHAMIM \
+
+ifneq ($(ARROW_GAPPS), true)
+ifneq ($(WITH_GAPPS), true)
+ifneq ($(WITH_GMS), true)
+PRODUCT_PACKAGES += \
+	Fcitx5Android \
+	ViaBrowser
+
+endif
+endif
+endif

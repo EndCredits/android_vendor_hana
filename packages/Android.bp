@@ -8,3 +8,36 @@ android_app_import {
 	},
     system_ext_specific: true,
 }
+
+android_app_import {
+    name: "ViaBrowser",
+    owner: "tuyafeng",
+    apk: "ViaBrowser/via-release.apk",
+    presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "Fcitx5Android",
+    owner: "fcitx5-android",
+    apk: "Fcitx5Android/fcitx5android-0.0.4-ge2fc8a6c.apk",
+    presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "AndroidDataBackup",
+    owner: "XayahSuSuSu",
+    apk: "AndroidDataBackup/DataBackup-Beta-4.3.16fix.apk",
+    presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+    system_ext_specific: true,
+}
