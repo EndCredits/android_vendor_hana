@@ -12,31 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Vendor Path
 CUSTOM_PATH := vendor/hana
 
-# Soong Namespace
-PRODUCT_SOONG_NAMESPACES += $(CUSTOM_PATH)
+# Copy ringtones
+PRODUCT_COPY_FILES += \
+	$(CUSTOM_PATH)/audio/Please_dont_pick_me_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Please_dont_pick_me_up.ogg
 
-# Audios
-$(call inherit-product, $(CUSTOM_PATH)/config/audio.mk)
-
-# Custom Apps
-PRODUCT_PACKAGES += \
-	AndroidDataBackup \
-	CameraGo_SHAMIM \
-	GeometricWeather
-
-ifneq ($(WITH_GAPPS), true)
-ifneq ($(WITH_GMS), true)
-PRODUCT_PACKAGES += \
-	Fcitx5Android \
-	ViaBrowser
-endif
-endif
-
-ifdef $(LINEAGE_VERSION)
-PRODUCT_PACKAGES += \
-	Fcitx5Android \
-	ViaBrowser
-endif
+# Change default sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Please_dont_pick_me_up.ogg
