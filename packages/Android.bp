@@ -41,3 +41,14 @@ android_app_import {
 	},
     system_ext_specific: true,
 }
+
+android_app_import {
+    name: "GeometricWeather",
+    owner: "WangDaYeeeeee",
+    apk: "GeometricWeather/GeometricWeather-3.102_pub-git.apk",
+    presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+    system_ext_specific: true,
+}

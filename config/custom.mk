@@ -22,14 +22,13 @@ PRODUCT_SOONG_NAMESPACES += $(CUSTOM_PATH)
 PRODUCT_PACKAGES += \
 	AndroidDataBackup \
 	CameraGo_SHAMIM \
+	GeometricWeather
 
-ifneq ($(ARROW_GAPPS), true)
 ifneq ($(WITH_GAPPS), true)
 ifneq ($(WITH_GMS), true)
 PRODUCT_PACKAGES += \
 	Fcitx5Android \
 	ViaBrowser
-endif
 endif
 endif
 
