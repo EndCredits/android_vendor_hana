@@ -19,5 +19,5 @@ PRODUCT_COPY_FILES += \
 	$(CUSTOM_PATH)/audio/Please_dont_pick_me_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Please_dont_pick_me_up.ogg
 
 # Change default sounds
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Please_dont_pick_me_up.ogg
