@@ -1,0 +1,10 @@
+android_app_import {
+    name: "CameraGo_SHAMIM",
+    owner: "Google Inc.",
+    apk: "CameraGo/CameraGo_SHAMIM.apk",
+    presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+    system_ext_specific: true,
+}
