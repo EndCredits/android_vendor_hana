@@ -29,7 +29,12 @@ ifneq ($(WITH_GMS), true)
 PRODUCT_PACKAGES += \
 	Fcitx5Android \
 	ViaBrowser
+endif
+endif
+endif
 
-endif
-endif
+ifdef $(LINEAGE_VERSION)
+PRODUCT_PACKAGES += \
+	Fcitx5Android \
+	ViaBrowser
 endif
