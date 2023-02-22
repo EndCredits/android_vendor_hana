@@ -7,15 +7,15 @@ NC="\033[0m"
 
 file_path=$1
 if [[ -f $file_path ]]; then
-    echo "Generating .json"
+    echo "Generating updater_info.json"
     file_name=$(basename "$file_path")
-    device_name=$(echo "$file_name" | cut -d'-' -f5)
-    buildprop=${OUT_DIR:-out}/target/product/$device_name/system/build.prop
+    device_name=picasso
+    buildprop=../../out/target/product/picasso/system/build.prop
     file_size=$(stat -c %s "$file_path")
     sha256=$(cut -d' ' -f1 "$file_path".sha256sum)
     datetime=$(grep -w ro\\.build\\.date\\.utc "$buildprop" | cut -d= -f2)
-    link=https://sourceforge.net/projects/derpfest/files/$device_name/$file_name/download
-    cat >"$file_path".json <<JSON
+    link=https://sourceforge.net/projects/picasso-rom-project/files/$file_name/download
+    cat > updater_info.json <<JSON
 {
   "response": [
     {
@@ -30,6 +30,5 @@ if [[ -f $file_path ]]; then
   ]
 }
 JSON
-        mv "$file_path".json "${OUT_DIR:-out}"/target/product/"$device_name"/"$device_name".json
-        echo -e "${GREEN}Done generating ${YELLOW}$device_name.json${NC}"
+        echo -e "${GREEN}Done generating ${YELLOW}updater_info.json${NC}"
 fi
