@@ -3,7 +3,7 @@ android_app_import {
     owner: "Google Inc.",
     apk: "CameraGo/CameraGo.apk",
     overrides: ["Camera2 Aperture"],
-    presigned: true,
+    certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -15,7 +15,7 @@ android_app_import {
     owner: "tuyafeng",
     apk: "ViaBrowser/via.apk",
     overrides: ["Browser"],
-    presigned: true,
+    certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -26,7 +26,7 @@ android_app_import {
     name: "Fcitx5Android",
     owner: "fcitx5-android",
     apk: "Fcitx5Android/fcitx5android.apk",
-    presigned: true,
+    certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -37,7 +37,7 @@ android_app_import {
     name: "AndroidDataBackup",
     owner: "XayahSuSuSu",
     apk: "AndroidDataBackup/DataBackup.apk",
-    presigned: true,
+    certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -49,7 +49,7 @@ android_app_import {
     name: "GeometricWeather",
     owner: "WangDaYeeeeee",
     apk: "GeometricWeather/GeometricWeather.apk",
-    presigned: true,
+    certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
