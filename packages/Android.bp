@@ -4,7 +4,7 @@ android_app_import {
     apk: "CameraGo/CameraGo_SHAMIM.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
     product_specific: true,
 }
@@ -15,7 +15,7 @@ android_app_import {
     apk: "ViaBrowser/via-release.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
     product_specific: true,
 }
@@ -26,7 +26,7 @@ android_app_import {
     apk: "Fcitx5Android/fcitx5android-0.0.4-ge2fc8a6c.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
     product_specific: true,
 }
@@ -37,7 +37,7 @@ android_app_import {
     apk: "AndroidDataBackup/DataBackup-Beta-4.3.16fix.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
     product_specific: true,
 }
@@ -48,7 +48,7 @@ android_app_import {
     apk: "GeometricWeather/GeometricWeather-3.102_pub-git.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
     product_specific: true,
 }
