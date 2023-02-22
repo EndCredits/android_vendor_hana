@@ -5,7 +5,7 @@ android_app_import {
     overrides: ["Camera2 Aperture"],
     presigned: true,
 	dex_preopt: {
-		enabled: true,
+		enabled: false,
 	},
     product_specific: true,
 }
@@ -17,7 +17,7 @@ android_app_import {
     overrides: ["Browser"],
     presigned: true,
 	dex_preopt: {
-		enabled: true,
+		enabled: false,
 	},
     product_specific: true,
 }
@@ -28,7 +28,7 @@ android_app_import {
     apk: "Fcitx5Android/fcitx5android.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: true,
+		enabled: false,
 	},
     product_specific: true,
 }
@@ -39,7 +39,7 @@ android_app_import {
     apk: "AndroidDataBackup/DataBackup.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: true,
+		enabled: false,
 	},
     product_specific: true,
     privileged: true,
@@ -51,7 +51,7 @@ android_app_import {
     apk: "GeometricWeather/GeometricWeather.apk",
     presigned: true,
 	dex_preopt: {
-		enabled: true,
+		enabled: false,
 	},
     product_specific: true,
 }
