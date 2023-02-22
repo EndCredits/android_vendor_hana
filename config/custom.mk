@@ -44,5 +44,6 @@ endif
 
 PRODUCT_PACKAGES += \
 	KProfiles
+
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(CUSTOM_PATH)/sepolicy/vendor
