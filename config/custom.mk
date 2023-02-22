@@ -41,3 +41,8 @@ PRODUCT_PACKAGES += \
 	Fcitx5Android \
 	ViaBrowser
 endif
+
+PRODUCT_PACKAGES += \
+	KProfiles
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(CUSTOM_PATH)/sepolicy/vendor
