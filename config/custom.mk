@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 	CameraGo_SHAMIM \
 	GeometricWeather
 
-ifneq ($(WITH_GAPPS), true)
+ifneq ($(ARROW_GAPPS), true)
 ifneq ($(WITH_GMS), true)
 PRODUCT_PACKAGES += \
 	Fcitx5Android \
