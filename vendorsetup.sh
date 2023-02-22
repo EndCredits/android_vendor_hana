@@ -12,12 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if [ ! -d "$ANDROID_BUILD_TOP/packages/apps/KProfiles" ]; then
+CURRENT_PATH=$(pwd)
+
+echo "$CURRENT_PATH/packages/apps/KProfiles"
+
+if [ ! -d "$CURRENT_PATH/packages/apps/KProfiles" ]; then
     echo 'KProfiles App not exist. Cloning...'
-    git clone https://github.com/CannedShroud/android_packages_apps_KProfiles $ANDROID_BUILD_TOP/packages/apps/KProfiles/
+    git clone https://github.com/CannedShroud/android_packages_apps_KProfiles $CURRENT_PATH/packages/apps/KProfiles/
 else
     echo 'KProfiles App seems existed. Updating to latest version'
-    cd $ANDROID_BUILD_TOP/packages/apps/KProfiles
+    cd $CURRENT_PATH/packages/apps/KProfiles
     git pull
     croot
 fi
