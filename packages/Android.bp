@@ -14,7 +14,7 @@ android_app_import {
     name: "ViaBrowser",
     owner: "tuyafeng",
     apk: "ViaBrowser/via.apk",
-    overrides: ["Browser"]
+    overrides: ["Browser"],
     presigned: true,
 	dex_preopt: {
 		enabled: true,
@@ -42,6 +42,7 @@ android_app_import {
 		enabled: true,
 	},
     product_specific: true,
+    privileged: true,
 }
 
 android_app_import {

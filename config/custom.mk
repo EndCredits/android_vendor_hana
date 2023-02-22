@@ -24,7 +24,7 @@ $(call inherit-product, $(CUSTOM_PATH)/config/audio.mk)
 # Custom Apps
 PRODUCT_PACKAGES += \
 	AndroidDataBackup \
-	CameraGo_SHAMIM \
+	CameraGo \
 	GeometricWeather
 
 ifneq ($(ARROW_GAPPS), true)
