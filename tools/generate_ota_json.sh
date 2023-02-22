@@ -6,6 +6,14 @@ YELLOW="\033[1;33m"
 NC="\033[0m"
 
 file_path=$1
+
+isGapps=$2
+
+if [ ! $isGapps ]; then 
+    echo "Usage: $0 <otapackage path> <isGapps: vanilla or gapps> " 
+    exit -1
+fi
+
 if [[ -f $file_path ]]; then
     echo "Generating updater_info.json"
     file_name=$(basename "$file_path")
@@ -22,7 +30,7 @@ if [[ -f $file_path ]]; then
       "datetime": $datetime,
       "filename": "$file_name",
       "id": "$sha256",
-      "romtype": "Official",
+      "romtype": "$isGapps",
       "size": $file_size,
       "url": "$link",
       "version": "13"
