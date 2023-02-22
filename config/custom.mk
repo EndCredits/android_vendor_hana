@@ -30,14 +30,12 @@ PRODUCT_PACKAGES += \
 ifneq ($(ARROW_GAPPS), true)
 ifneq ($(WITH_GMS), true)
 PRODUCT_PACKAGES += \
-	Fcitx5Android \
 	ViaBrowser
 endif
 endif
 
 ifdef $(LINEAGE_BUILD)
 PRODUCT_PACKAGES += \
-	Fcitx5Android \
 	ViaBrowser
 endif
 
