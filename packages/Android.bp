@@ -2,6 +2,7 @@ android_app_import {
     name: "CameraGo_SHAMIM",
     owner: "Google Inc.",
     apk: "CameraGo/CameraGo_SHAMIM.apk",
+    overrides: ["Camera2 Aperture"],
     presigned: true,
 	dex_preopt: {
 		enabled: true,
