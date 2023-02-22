@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
-ifdef $(LINEAGE_VERSION)
+ifdef $(LINEAGE_BUILD)
 PRODUCT_PACKAGES += \
 	Fcitx5Android \
 	ViaBrowser
